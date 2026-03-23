@@ -280,7 +280,7 @@ export default function Home() {
         </section>
 
         {/* TẠI SAO CHỌN CHÚNG TÔI */}
-        <section className="-mt-0 pt-4 pb-2 md:pt-4 md:pb-0 bg-gray-50 relative z-10">
+        <section className="-mt-0 pt-1 pb-2 md:pt-1 md:pb-0 bg-gray-50 relative z-10">
           <div className="max-w-[1400px] mx-auto px-4 md:px-4">
             <div className="text-center max-w-4xl mx-auto mb-4 md:mb-6">
               <h2 className="text-4xl md:text-5xl font-black text-[#111827] uppercase mb-4 tracking-tight">
@@ -339,27 +339,36 @@ export default function Home() {
 
         {/* TÁCH CÁC SECTION DỊCH VỤ DỰA TRÊN THIẾT KẾ MỚI */}
         {serviceCategories.map((category, idx) => (
-          <section key={category.id} className={`mt-0 mb-0 py-4 md:py-6 border-t border-gray-100 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
+          <section
+            key={category.id}
+            // border-gray-50/50 tạo đường kẻ cực mảnh, gần như hòa vào nền
+            className={`mt-0 mb-0 py-2 md:py-4 border-t border-gray-50/50 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
+          >
             <div className="max-w-[1400px] mx-auto px-4 md:px-10">
 
-              {/* TIÊU ĐỀ 2 MÀU IN HOA */}
-              <div className="text-center mb-4 md:mb-6">
-                <h2 className="text-2xl md:text-4xl lg:text-5xl font-black text-[#111827] uppercase tracking-tight mb-2 md:mb-4">
+              {/* TIÊU ĐỀ 2 MÀU IN HOA - ĐÃ ÉP SÁT KHOẢNG CÁCH */}
+              <div className="text-center mb-2 md:mb-4">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-[#111827] uppercase tracking-tight mb-1 md:mb-2">
                   {category.mainTitle} <span className="text-[#bc700a]">{category.highlightTitle}</span>
                 </h2>
-                <p className="text-gray-500 text-[14px] md:text-base font-medium max-w-2xl mx-auto px-2 leading-relaxed">
+                <p className="text-gray-500 text-[13px] md:text-base font-medium max-w-2xl mx-auto px-2 leading-tight italic">
                   {category.description}
                 </p>
-                <div className="w-12 md:w-20 h-1 bg-gradient-to-r from-[#bc700a] to-[#e08a0d] mx-auto mt-3 md:mt-5 rounded-full"></div>
+                <div className="w-10 md:w-16 h-1 bg-gradient-to-r from-[#bc700a] to-[#e08a0d] mx-auto mt-2 md:mt-3 rounded-full"></div>
               </div>
 
-              {/* GRID */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+              {/* GRID DỊCH VỤ - HIỂN THỊ 1 CỘT TRÊN MOBILE */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
                 {category.services.map((srv) => (
-                  <Link key={srv.id} href={srv.link} className="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-1">
+                  <Link
+                    key={srv.id}
+                    href={srv.link}
+                    // border-gray-50 giúp viền thẻ dịch vụ rất nhẹ nhàng, không bị thô
+                    className="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-50 hover:-translate-y-1"
+                  >
 
-                    {/* Ảnh */}
-                    <div className="relative h-52 md:h-64 lg:h-72 overflow-hidden">
+                    {/* PHẦN ẢNH */}
+                    <div className="relative h-48 md:h-60 lg:h-64 overflow-hidden">
                       <img
                         src={srv.image}
                         alt={srv.title}
@@ -368,16 +377,16 @@ export default function Home() {
                       />
                     </div>
 
-                    {/* NỘI DUNG CARD */}
-                    <div className="py-4 px-4 flex flex-col flex-grow text-center items-center">
+                    {/* NỘI DUNG THẺ (CARD content) */}
+                    <div className="py-2 px-3 flex flex-col flex-grow text-center items-center">
 
-                      {/* Tiêu đề: Tăng padding y để thoáng hơn, dùng màu chủ đạo */}
-                      <h3 className="font-black text-[#111827] group-hover:text-[#e08a0d] text-[16px] md:text-[19px] py-2 md:py-3 mb-2 transition-colors line-clamp-2 leading-tight min-h-[50px] md:min-h-[60px] flex items-center">
+                      {/* Tiêu đề: Xám đen, in đậm, tăng padding để thoáng chữ */}
+                      <h3 className="font-black text-[#111827] group-hover:text-[#e08a0d] text-[15px] md:text-[18px] py-1 md:py-2 mb-1 transition-colors line-clamp-2 leading-tight min-h-[40px] md:min-h-[50px] flex items-center">
                         {srv.title}
                       </h3>
 
-                      {/* Nút: Đổi về màu vàng cam #e08a0d và hover xám đen #111827 */}
-                      <div className="inline-block w-full bg-[#e08a0d] group-hover:bg-[#111827] text-white font-black py-3 px-6 rounded-xl text-[12px] md:text-[14px] uppercase tracking-widest transition-all shadow-md group-hover:shadow-lg">
+                      {/* Nút bấm: Vàng cam chủ đạo, Hover xám đen */}
+                      <div className="inline-block w-full bg-[#e08a0d] group-hover:bg-[#111827] text-white font-black py-2 px-6 rounded-xl text-[11px] md:text-[13px] uppercase tracking-widest transition-all shadow-md group-hover:shadow-lg">
                         XEM CHI TIẾT
                       </div>
                     </div>
@@ -400,7 +409,7 @@ export default function Home() {
         </section>
 
         {/* PROCESS SECTION - ĐÃ GIẢM KHOẢNG CÁCH TỐI ĐA */}
-        <section className="py-4 md:py-6 bg-white relative overflow-hidden" id="quy-trinh">
+        <section className="py-2 md:py-2 bg-white relative overflow-hidden" id="quy-trinh">
           <div className="max-w-[1400px] mx-auto px-4 md:px-10 relative z-10">
 
             {/* Tiêu đề: Giảm mb-10 xuống mb-6 */}
@@ -525,7 +534,7 @@ export default function Home() {
         </section>
 
         {/* BOTTOM CTA */}
-        <section className="py-14 md:py-16 bg-[url('https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-fixed bg-center relative">
+        <section className="pt-4 pb-4py-16 md:py-16 bg-[url('https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-fixed bg-center relative">
           <div className="absolute inset-0 bg-gradient-to-b from-[#111827]/90 to-[#111827]/70 backdrop-blur-sm"></div>
           <div className="max-w-4xl mx-auto px-6 text-center relative z-10 text-white">
             <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">Bạn Đang Có Sản Phẩm Cần Thanh Lý?</h2>
