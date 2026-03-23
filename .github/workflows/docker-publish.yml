@@ -68,7 +68,7 @@ jobs:
             web-production:
               image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
               ports:
-                - "3001:3001"
+                - "3002:3002"
               restart: unless-stopped
           EOF
           
@@ -83,4 +83,4 @@ jobs:
           
           eval "$SSH_CMD \"mkdir -p $DEPLOY_PATH\""
           cat docker-compose.prod.yml | eval "$SSH_CMD \"cat > $DEPLOY_PATH/docker-compose.yml\""
-          eval "$SSH_CMD \"cd $DEPLOY_PATH && echo '$GH_PAT' | sudo docker login ghcr.io -u '$GH_USER' --password-stdin && sudo docker compose pull && (sudo fuser -k 3001/tcp || true) && sudo docker ps -q --filter publish=3001 | xargs -r sudo docker rm -f && sudo docker compose up -d\""
+          eval "$SSH_CMD \"cd $DEPLOY_PATH && echo '$GH_PAT' | sudo docker login ghcr.io -u '$GH_USER' --password-stdin && sudo docker compose pull && (sudo fuser -k 3002/tcp || true) && sudo docker ps -q --filter publish=3002 | xargs -r sudo docker rm -f && sudo docker compose up -d\""

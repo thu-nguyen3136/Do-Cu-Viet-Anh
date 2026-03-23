@@ -7,7 +7,7 @@ COPY package.json package-lock.json* ./
 FROM base AS dev
 RUN npm ci || npm install
 COPY . .
-ENV PORT=3001
+ENV PORT=3002
 CMD ["npm", "run", "dev"]
 
 # Stage 3: Builder for production
@@ -27,5 +27,5 @@ COPY --from=builder /app/out /usr/share/nginx/html
 # Copy custom nginx config
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-EXPOSE 3001
+EXPOSE 3002
 CMD ["nginx", "-g", "daemon off;"]
