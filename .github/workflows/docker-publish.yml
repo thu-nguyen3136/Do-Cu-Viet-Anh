@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: thu-nguyen3136/do-cu-cong-dinh
+  IMAGE_NAME: thu-nguyen3136/do-cu-viet-anh
 
 jobs:
   build-and-push-image:
