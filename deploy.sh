@@ -19,7 +19,7 @@ fi
 
 IMAGE_NAME="ghcr.io/thu-nguyen3136/do-cu-cong-dinh:latest"
 CONTAINER_NAME="docu-frontend-app"
-PORT="3001"
+PORT="3002"
 
 echo "Pulling the latest image from GitHub Container Registry ($IMAGE_NAME)..."
 sudo docker pull "$IMAGE_NAME"
@@ -36,7 +36,7 @@ echo "Starting the new container on port $PORT..."
 sudo docker run -d \
     --name "$CONTAINER_NAME" \
     --restart unless-stopped \
-    -p "$PORT:3001" \
+    -p "$PORT:3002" \
     "$IMAGE_NAME"
 
 echo "Deployment complete! Application is now running on port $PORT."
