@@ -9,17 +9,17 @@ export default function Header() {
   return (
     <header className="w-full sticky top-0 z-[100] shadow-xl font-sans">
 
-      {/* --- TOP BAR: DARK, PREMIUM --- */}
+      {/* --- THANH ĐẦU TRANG: CHUYÊN NGHIỆP, NỀN TỐI --- */}
       <div className="bg-[#111827] text-white py-1.5 md:py-2 relative overflow-hidden flex-shrink-0">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#bc700a]/20 to-transparent opacity-60"></div>
         <div className="max-w-[1400px] mx-auto px-4 md:px-10 flex flex-col md:flex-row justify-between items-center gap-2 md:gap-4 relative z-10">
 
-          {/* Slogan */}
+          {/* Khẩu hiệu */}
           <div className="hidden lg:flex items-center gap-2 text-[12px] xl:text-[13px] font-semibold text-gray-300 uppercase tracking-widest">
             <span className="text-[#e08a0d] text-lg">✨</span> Đơn vị thu mua đồ cũ, thanh lý giá cao uy tín nhất TP.HCM
           </div>
 
-          {/* Right Action */}
+          {/* Cụm hành động / Nút gọi */}
           <div className="flex items-center justify-between w-full lg:w-auto gap-3 sm:gap-6">
             <div className="flex items-center gap-2 font-black tracking-widest bg-white/5 px-4 py-1.5 rounded-full border border-white/10 shadow-inner">
               <div className="flex h-2.5 w-2.5 relative">
@@ -40,7 +40,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* --- MAIN NAV: TRẢ LẠI MÀU GỐC BRAND-600 --- */}
+      {/* --- MENU CHÍNH: THANH ĐIỀU HƯỚNG --- */}
       <nav className="bg-brand-600 border-b-4 border-brand-700 relative shadow-lg">
         <div className="max-w-[1400px] mx-auto px-4 md:px-10 flex justify-between items-stretch h-[60px] md:h-[72px]">
 
@@ -167,7 +167,7 @@ export default function Header() {
           <div className="lg:hidden w-8 self-center"></div>
         </div>
 
-        {/* --- MOBILE OVERLAY MENU --- */}
+        {/* --- LỚP PHỦ MENU TRÊN DI ĐỘNG --- */}
         <div className={`fixed inset-0 bg-black/50 z-[140] lg:hidden transition-opacity duration-300 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`} onClick={() => setIsOpen(false)} />
 
         <div className={`fixed top-0 left-0 w-[80%] max-w-[300px] h-[100dvh] bg-brand-600 z-[150] lg:hidden transition-transform duration-300 shadow-2xl ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
@@ -182,7 +182,7 @@ export default function Header() {
               </button>
             </div>
 
-            {/* Mobile Menu Links */}
+            {/* Danh sách Liên Kết Trình Đơn Di Động */}
             <div className="overflow-y-auto pb-[100px] custom-scrollbar">
               <ul className="flex flex-col space-y-4 font-bold text-[14px] uppercase text-white text-left">
                 <li className="text-brand-100" onClick={() => setIsOpen(false)}><Link href="/">Trang chủ</Link></li>
@@ -239,7 +239,7 @@ export default function Header() {
               </ul>
             </div>
 
-            {/* Mobile Footer CTA */}
+            {/* Nút hành động nổi ở viền dưới Di Động */}
             <div className="absolute bottom-0 left-0 w-full bg-brand-600 border-t border-brand-500 p-6">
               <a href="tel:0988257479" className="block w-full bg-white text-[#bc700a] text-center py-4 rounded-lg font-black shadow-lg hover:bg-brand-100 transition tracking-wide">
                 GỌI BÁO GIÁ NGAY

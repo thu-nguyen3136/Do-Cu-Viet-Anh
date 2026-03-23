@@ -142,6 +142,23 @@ export default function Home() {
     }
   };
 
+  const news = [
+    {
+      id: 1,
+      title: "Đơn Vị Thu Mua Đồ Cũ Uy Tín Tại TP.HCM",
+      desc: "Việt Anh chuyên thu mua đồ cũ giá cao tại TP.HCM, hỗ trợ khảo sát tận nơi, thanh toán nhanh chóng.",
+      image: "/tin-tuc-1.jpg",
+      slug: "/tin-tuc/thu-mua-do-cu-uy-tin-tphcm"
+    },
+    {
+      id: 2,
+      title: "Thu Mua Thiết Bị Vệ Sinh, Phế Liệu Giá Cao Tại TP.HCM",
+      desc: "Nhận thu mua thiết bị vệ sinh cũ, phế liệu inox, sắt, nhôm giá cao, hỗ trợ tháo dỡ tận nơi.",
+      image: "/tin-tuc-2.jpg",
+      slug: "/tin-tuc/thu-mua-bon-cau-cu-thiet-bi-ve-sinh"
+    }
+  ];
+
   return (
     <div className="min-h-screen font-sans bg-gray-50 flex flex-col">
       <Head>
@@ -156,7 +173,7 @@ export default function Home() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       </Head>
 
-      {/* HERO SECTION */}
+      {/* PHẦN BANNER CHÍNH */}
       <section className="relative w-full overflow-hidden block">
         <h1 className="sr-only">Thu Mua Đồ Cũ Giá Cao, Thanh Lý Nhà Hàng, Khách Sạn TPHCM - Đồ Cũ Việt Anh</h1>
         <div className="w-full">
@@ -174,7 +191,7 @@ export default function Home() {
 
       <main className="flex-grow">
 
-        {/* INTRODUCTION */}
+        {/* PHẦN GIỚI THIỆU */}
         <section
           id="gioi-thieu"
           className="pt-8 pb-8 md:pt-8 md:pb-8 bg-white"
@@ -182,7 +199,7 @@ export default function Home() {
           <div className="max-w-[1400px] mx-auto px-4 md:px-6">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-              {/* IMAGE */}
+              {/* HÌNH ẢNH GÓC TRÁI */}
               <div className="relative">
                 <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
                   <img
@@ -197,7 +214,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* CONTENT */}
+              {/* NỘI DUNG GIỚI THIỆU */}
               <div>
                 <span className="block text-sm font-bold tracking-widest text-[#e08a0d] uppercase mb-3">
                   Giới thiệu Việt Anh
@@ -214,7 +231,7 @@ export default function Home() {
                   với giá cao, hỗ trợ xử lý nhanh gọn và tối ưu thu hồi vốn cho khách hàng.
                 </p>
 
-                {/* BENEFITS */}
+                {/* CÁC LỢI ÍCH */}
                 <div className="grid grid-cols-2 gap-4 mb-8">
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#e08a0d]/10 text-[#e08a0d] text-sm font-bold">
@@ -242,7 +259,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* CTA */}
+                {/* NÚT KÊU GỌI HÀNH ĐỘNG */}
                 <a
                   href="/lien-he"
                   className="inline-flex items-center justify-center bg-[#111827] text-white font-bold px-8 py-4 rounded-xl hover:bg-[#e08a0d] transition"
@@ -255,7 +272,7 @@ export default function Home() {
         </section>
 
 
-        {/* THỐNG KÊ (STATS) */}
+        {/* PHẦN THỐNG KÊ CÔNG TY */}
         <section className="-mt-6 pt-6 pb-12 bg-white relative z-10 border-b border-gray-100 shadow-[0_10px_30px_rgba(0,0,0,0.02)]">
           <div className="max-w-[1400px] mx-auto px-6 md:px-10">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 divide-y md:divide-y-0 md:divide-x divide-gray-200">
@@ -291,7 +308,7 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 text-center">
-              {/* Item 1 */}
+              {/* Mục 1 */}
               <div className="flex flex-col items-center">
                 <div className="w-20 h-20 md:w-24 md:h-24 mb-6 md:mb-8 text-[#e08a0d] border-2 border-[#e08a0d] rounded-full flex items-center justify-center bg-white shadow-xl hover:bg-[#e08a0d] hover:text-white hover:-translate-y-2 transition-all duration-300">
                   <svg className="w-10 h-10 md:w-12 md:h-12" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" /></svg>
@@ -377,7 +394,7 @@ export default function Home() {
                       />
                     </div>
 
-                    {/* NỘI DUNG THẺ (CARD content) */}
+                    {/* NỘI DUNG THẺ DỊCH VỤ */}
                     <div className="py-2 px-3 flex flex-col flex-grow text-center items-center">
 
                       {/* Tiêu đề: Xám đen, in đậm, tăng padding để thoáng chữ */}
@@ -398,7 +415,7 @@ export default function Home() {
           </section>
         ))}
 
-        {/* SECTION NÚT BÁO GIÁ - Đã giảm tối đa padding */}
+        {/* KHU VỰC NÚT BÁO GIÁ - Đã giảm tối đa khoảng đệm */}
         <section className="py-0 md:py-1 bg-white flex justify-center w-full relative z-[6]">
           <Link
             href="/lien-he"
@@ -408,7 +425,7 @@ export default function Home() {
           </Link>
         </section>
 
-        {/* PROCESS SECTION - ĐÃ GIẢM KHOẢNG CÁCH TỐI ĐA */}
+        {/* PHẦN QUY TRÌNH BAO TRỌN - ĐÃ GIẢM KHOẢNG CÁCH TỐI ĐA */}
         <section className="py-2 md:py-2 bg-white relative overflow-hidden" id="quy-trinh">
           <div className="max-w-[1400px] mx-auto px-4 md:px-10 relative z-10">
 
@@ -421,7 +438,7 @@ export default function Home() {
             </div>
 
             <div className="relative">
-              {/* Grid: Giảm gap trên mobile để các bước sát nhau hơn */}
+              {/* Lưới hiển thị: Giảm khoảng cách trên mobile để các bước sát nhau hơn */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-0 relative z-10">
                 {[
                   { step: "1", title: "Nhận yêu cầu", desc: "Tiếp nhận thông tin qua hotline: 0988.257.479" },
@@ -451,12 +468,12 @@ export default function Home() {
                       {process.step}
                     </div>
 
-                    {/* Tiêu đề Step: Chuyển màu khi hover */}
+                    {/* Tiêu đề Bước Hoạt Động: Chuyển màu khi rê chuột  */}
                     <h3 className="text-lg md:text-xl font-black mb-2 text-[#111827] transition-colors duration-300 group-hover:text-[#bc700a] uppercase tracking-wide">
                       {process.title}
                     </h3>
 
-                    {/* Mô tả Step: Font chữ nhỏ lại chút cho gọn */}
+                    {/* Mô tả Từng Bước: Canh chỉnh thu nhỏ gọn gàng */}
                     <p className="text-gray-500 font-medium text-[13px] md:text-[14px] leading-snug max-w-[240px] mx-auto transition-colors duration-300 group-hover:text-gray-800">
                       {process.desc}
                     </p>
@@ -467,7 +484,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* FEEDBACK SECTION */}
+        {/* PHẦN ĐÁNH GIÁ CỦA KHÁCH HÀNG */}
         <section className="py-4 md:py-6 bg-white overflow-hidden">
           <div className="max-w-[1400px] mx-auto px-4 md:px-10">
 
@@ -533,8 +550,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* BOTTOM CTA */}
-        <section className="pt-4 pb-4py-16 md:py-16 bg-[url('https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-fixed bg-center relative">
+        {/* KÊU GỌI HÀNH ĐỘNG DƯỚI CÙNG */}
+        <section className="py-16 md:py-16 bg-[url('https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-fixed bg-center relative">
           <div className="absolute inset-0 bg-gradient-to-b from-[#111827]/90 to-[#111827]/70 backdrop-blur-sm"></div>
           <div className="max-w-4xl mx-auto px-6 text-center relative z-10 text-white">
             <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">Bạn Đang Có Sản Phẩm Cần Thanh Lý?</h2>
@@ -550,6 +567,102 @@ export default function Home() {
                 <span className="text-2xl font-sans">Zalo</span> Gửi Hình Zalo
               </a>
             </div>
+          </div>
+        </section>
+
+        {/* NEWS SECTION */}
+        <section className="pt-4 pb-4 md:pt-4 md:pb-4 bg-gray-50" id="tin-tuc">
+          <div className="max-w-[1400px] mx-auto px-6 md:px-10">
+
+            {/* HEADER */}
+            <div className="text-center mb-10 md:mb-12">
+              <h2 className="text-3xl md:text-5xl font-black text-[#111827] uppercase">
+                Cập Nhật Tin Tức <span className="text-[#bc700a]">Mới Nhất</span>
+              </h2>
+
+              <div className="w-20 h-1 bg-[#bc700a] mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            {/* DATA */}
+            {(() => {
+              const news = [
+                {
+                  id: 1,
+                  title: "Đơn Vị Thu Mua Đồ Cũ Uy Tín Tại TP.HCM",
+                  desc: "Việt Anh chuyên thu mua đồ cũ giá cao tại TP.HCM, hỗ trợ khảo sát tận nơi, thanh toán nhanh chóng, không ép giá.",
+                  image: "/thu-mua-do-cu-uy-tin-hcm.jpeg",
+                  slug: "/tin-tuc/thu-mua-do-cu-uy-tin-tphcm"
+                },
+                {
+                  id: 2,
+                  title: "Thu Mua Thiết Bị Vệ Sinh, Phế Liệu Giá Cao Tại TP.HCM",
+                  desc: "Nhận thu mua thiết bị vệ sinh cũ, phế liệu inox, sắt, nhôm với giá cao, tháo dỡ và vận chuyển tận nơi.",
+                  image: "/thu-mua-thiet-bi-ve-sinh-phe-lieu-gia-cao-tai-tp-hcm.png",
+                  slug: "/tin-tuc/thu-mua-bon-cau-cu-thiet-bi-ve-sinh"
+                }
+              ];
+
+              return (
+                <>
+                  {/* GRID */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                    {news.map((item) => (
+                      <Link
+                        key={item.id}
+                        href={item.slug}
+                        className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-[0_8px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_15px_35px_rgba(224,138,13,0.15)] transition-all duration-300"
+                      >
+
+                        {/* IMAGE */}
+                        <div className="relative h-52 overflow-hidden">
+                          <img
+                            src={item.image}
+                            alt={item.title}
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            onError={(e) => {
+                              e.currentTarget.src =
+                                "https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=800&auto=format&fit=crop";
+                            }}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        </div>
+
+                        {/* CONTENT */}
+                        <div className="p-5">
+                          <span className="text-xs text-[#e08a0d] font-bold uppercase tracking-wider">
+                            Tin tức
+                          </span>
+
+                          <h3 className="font-black text-lg text-[#111827] mt-2 mb-3 line-clamp-2 group-hover:text-[#e08a0d] transition-colors">
+                            {item.title}
+                          </h3>
+
+                          <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-4">
+                            {item.desc}
+                          </p>
+
+                          <div className="text-[#e08a0d] font-bold text-sm uppercase tracking-wide flex items-center gap-2 group-hover:text-[#bc700a]">
+                            Xem chi tiết
+                            <span className="transition-transform group-hover:translate-x-1">→</span>
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+
+                  {/* CTA */}
+                  <div className="text-center mt-10 md:mt-12">
+                    <Link
+                      href="/tin-tuc"
+                      className="inline-flex items-center justify-center bg-[#111827] text-white font-bold px-8 py-4 rounded-xl hover:bg-[#e08a0d] transition"
+                    >
+                      XEM TẤT CẢ TIN TỨC →
+                    </Link>
+                  </div>
+                </>
+              );
+            })()}
+
           </div>
         </section>
 
