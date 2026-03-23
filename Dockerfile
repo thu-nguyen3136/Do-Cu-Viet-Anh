@@ -1,6 +1,6 @@
 # Stage 1: Base
 FROM node:20-alpine AS base
-LABEL org.opencontainers.image.source="https://github.com/thu-nguyen3136/Do-Cu-Viet-Anh"
+LABEL org.opencontainers.image.source="https://github.com/adminvpshub/Do-Cu-Viet-Anh"
 WORKDIR /app
 COPY package.json package-lock.json* ./
 

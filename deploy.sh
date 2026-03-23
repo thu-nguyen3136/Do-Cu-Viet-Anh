@@ -6,7 +6,7 @@ set -e
 # Prompt for GitHub username and PAT
 echo "To pull from private GHCR, you may need a Personal Access Token (PAT)."
 echo "If your package is public, you can skip login, but if it's private, please login."
-read -p "GitHub Username (e.g., thu-nguyen3136): " GH_USER
+read -p "GitHub Username (e.g., adminvpshub): " GH_USER
 echo -n "GitHub PAT (with read:packages permission): "
 read -s GH_PAT
 echo ""
@@ -18,7 +18,7 @@ if [ -n "$GH_USER" ] && [ -n "$GH_PAT" ]; then
     echo "$GH_PAT" | sudo docker login ghcr.io -u "$GH_USER" --password-stdin
 fi
 
-IMAGE_NAME="ghcr.io/thu-nguyen3136/do-cu-viet-anh:latest"
+IMAGE_NAME="ghcr.io/adminvpshub/do-cu-viet-anh:latest"
 CONTAINER_NAME="docu-frontend-app"
 PORT="3002"
 
