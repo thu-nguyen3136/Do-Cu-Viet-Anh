@@ -14,6 +14,7 @@ echo ""
 # Login to GHCR if credentials are provided
 if [ -n "$GH_USER" ] && [ -n "$GH_PAT" ]; then
     echo "Logging in to ghcr.io..."
+    sudo docker logout ghcr.io || true
     echo "$GH_PAT" | sudo docker login ghcr.io -u "$GH_USER" --password-stdin
 fi
 
