@@ -97,7 +97,7 @@ export default function Header() {
               <div className="absolute left-0 top-full w-[280px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <ul className="bg-white border-t-4 border-brand-600 shadow-2xl rounded-b-lg overflow-hidden text-left">
                   <li className="px-5 py-3.5 hover:bg-brand-50 text-gray-700 border-b border-gray-50 text-[13px] font-semibold hover:text-brand-600 hover:pl-8 transition-all duration-300">
-                    <Link href="/thu-mua-cua-cu-thanh-ly">Thu Mua Cửa Cũ Giá Cao</Link>
+                    <Link href="/thu-mua-cua-cu-gia-cao">Thu Mua Cửa Cũ Giá Cao</Link>
                   </li>
                   <li className="px-5 py-3.5 hover:bg-brand-50 text-gray-700 border-b border-gray-50 text-[13px] font-semibold hover:text-brand-600 hover:pl-8 transition-all duration-300">
                     <Link href="/thu-mua-cua-nhom">Thu Mua Cửa Nhôm Xingfa</Link>
@@ -191,7 +191,7 @@ export default function Header() {
                 {/* Thu Mua Cửa Cũ */}
                 <li className="border-t border-brand-500 pt-3 text-brand-100 text-[12px] font-black underline">Thu Mua Cửa Cũ</li>
                 <li className="pl-4 text-[13px] font-semibold text-brand-100 hover:text-white" onClick={() => setIsOpen(false)}>
-                  <Link href="/thu-mua-cua-cu-thanh-ly">Thu Mua Cửa Cũ Giá Cao</Link>
+                  <Link href="/thu-mua-cua-cu-gia-cao">Thu Mua Cửa Cũ Giá Cao</Link>
                 </li>
                 <li className="pl-4 text-[13px] font-semibold text-brand-100 hover:text-white" onClick={() => setIsOpen(false)}>
                   <Link href="/thu-mua-cua-nhom">Thu Mua Cửa Nhôm Xingfa</Link>
