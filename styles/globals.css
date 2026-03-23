@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@theme {
+  --color-brand-50: #fdf7ef;
+  --color-brand-100: #fceddf;
+  --color-brand-200: #f5d6af;
+  --color-brand-300: #efbe7a;
+  --color-brand-400: #eaa447;
+  --color-brand-500: #e59524;
+  --color-brand-600: #e08a0d;
+  --color-brand-700: #bc700a;
+  --color-brand-800: #955808;
+  --color-brand-900: #794908;
+  --color-brand-950: #452603;
+}
+
+/* Global font application - Apply Be Vietnam Pro to entire website */
+body {
+  font-family: 'Be Vietnam Pro', sans-serif !important;
+  line-height: 1.6; /* Better readability */
+}
+
+/* Custom styles for all pages - Optimized spacing */
+h1, h2 {
+  color: #e08a0d; /* New brand-600 */
+  padding: 0.5rem 0; /* Reduced padding for tighter spacing */
+  font-weight: 700; /* Bold for emphasis */
+  margin-bottom: 0.5rem; /* Add bottom margin for separation */
+}
+
+h3{
+  color: #e08a0d;
+}
+
+h1 {
+  font-size: 2.25rem; /* text-4xl equivalent */
+  line-height: 2.5rem;
+}
+
+h2 {
+  font-size: 1.875rem; /* text-3xl equivalent */
+  line-height: 2.25rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem; /* text-5xl on md+ */
+    line-height: 1;
+    padding: 0.75rem 0; /* Slightly more on desktop */
+  }
+  
+  h2 {
+    font-size: 2.25rem; /* text-4xl on md+ */
+    line-height: 2.5rem;
+    padding: 0.5rem 0;
+  }
+}
+
+/* General spacing optimizations */
+section {
+  margin-bottom: 2rem; /* Reduce section spacing */
+}
+
+@media (min-width: 768px) {
+  section {
+    margin-bottom: 3rem; /* Slightly more on desktop */
+  }
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: 1rem; /* Consistent paragraph spacing */
+}
+
+/* List spacing */
+ul, ol {
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web-local:
+    build:
+      context: .
+      target: dev
+    ports:
+      - "3001:3001"
+    restart: unless-stopped
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - PORT=3001
+      - NODE_ENV=development
