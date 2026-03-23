@@ -17,7 +17,7 @@ if [ -n "$GH_USER" ] && [ -n "$GH_PAT" ]; then
     echo "$GH_PAT" | sudo docker login ghcr.io -u "$GH_USER" --password-stdin
 fi
 
-IMAGE_NAME="ghcr.io/thu-nguyen3136/do-cu-cong-dinh:latest"
+IMAGE_NAME="ghcr.io/thu-nguyen3136/do-cu-viet-anh:latest"
 CONTAINER_NAME="docu-frontend-app"
 PORT="3002"
 
