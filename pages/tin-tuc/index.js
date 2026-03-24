@@ -57,11 +57,12 @@ export default function NewsPage() {
                     className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-[0_8px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_15px_35px_rgba(224,138,13,0.15)] transition-all duration-300"
                   >
 
-                    {/* IMAGE */}
-                    <div className="relative h-56 overflow-hidden">
+                    {/* IMAGE - ĐÃ TĂNG CHIỀU CAO TRÊN DESKTOP */}
+                    <div className="relative h-52 md:h-72 lg:h-80 overflow-hidden">
                       <img
                         src={item.image}
                         alt={item.title}
+                        // w-full h-full object-cover là bắt buộc để ảnh ko bị méo
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                         onError={(e) => {
                           e.currentTarget.src =

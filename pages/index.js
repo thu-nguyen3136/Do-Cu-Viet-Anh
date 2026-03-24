@@ -15,9 +15,9 @@ export default function Home() {
       description: 'Chuyên thu mua các loại cửa cũ với giá cao, tháo dỡ tận nơi chuyên nghiệp.',
       services: [
         { id: 1, title: 'Thu Mua Cửa Cũ Giá Cao', image: '/thu-mua-cua-cu-gia-cao.jpg', link: '/thu-mua-cua-cu-gia-cao' },
-        { id: 2, title: 'Thu Mua Cửa Nhôm Xingfa', image: '/thu-mua-cua-nhom-xingfa.jpg', link: '/thu-mua-cua-nhom-xingfa' },
+        { id: 2, title: 'Thu Mua Cửa Nhôm Xingfa', image: '/thu-mua-cua-nhom-xingfa.jpg', link: '/thu-mua-cua-nhom' },
         { id: 3, title: 'Thu Mua Cửa Gỗ Cũ', image: '/thu-mua-cua-go.jpg', link: '/thu-mua-cua-go' },
-        { id: 4, title: 'Thu Mua Cổng Nhôm Đúc', image: '/thu-mua-cong-nhom-duc.jpg', link: '/thu-mua-cong-nhom-duc' },
+        { id: 4, title: 'Thu Mua Cổng Nhôm Đúc', image: '/thu-mua-cong-nhom-duc.jpg', link: '/thu-mua-cong-nhom' },
         { id: 5, title: 'Thu Mua Cửa Cuốn Cũ', image: '/thu-mua-cua-cuon-cu.jpg', link: '/thu-mua-cua-cuon' },
         { id: 6, title: 'Thu Mua Cửa Sắt Cũ', image: '/thu-mua-cua-sat-cu.jpg', link: '/thu-mua-cua-sat' }
       ]
@@ -165,7 +165,7 @@ export default function Home() {
         <title>Thu Mua Đồ Cũ Giá Cao TPHCM | Thanh Lý Nhà Hàng, Khách Sạn - Việt Anh</title>
         <meta name="description" content="Chuyên Thu Mua Đồ Cũ Giá Cao Toàn Quốc⭐Thu Mua Thanh Lý Nhà Hàng Khách Sạn ⭐Thanh Lý Quán Ăn - Cafe⭐Báo Giá Tận Nơi 24/7. Hỗ trợ tháo dỡ vận chuyển miễn phí." />
         <meta name="keywords" content="thu mua đồ cũ, thu mua đồ gỗ, thanh lý nhà hàng, thanh lý khách sạn, mua cửa cũ, mua xác nhà xưởng, thu mua đồ cũ giá cao TPHCM" />
-        <meta property="og:title" content="CÔNG TY THU MUA ĐỒ CŨ GIÁ CAO TPHCM☎️【VIỆT ANH】" />
+        <meta property="og:title" content="CỬA HÀNG THU MUA ĐỒ CŨ GIÁ CAO TPHCM☎️【VIỆT ANH】" />
         <meta property="og:description" content="Chuyên Thu Mua Đồ Cũ Giá Cao Toàn Quốc⭐Thu Mua Thanh Lý Nhà Hàng Khách Sạn ⭐Báo Giá Tận Nơi" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://thanhlycuacutphcm.com/" />
@@ -220,9 +220,12 @@ export default function Home() {
                   Giới thiệu Việt Anh
                 </span>
 
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#111827] mb-6 leading-tight">
-                  THU MUA ĐỒ CŨ GIÁ CAO <br />
-                  <span className="text-[#bc700a]">XỬ LÝ NHANH – GỌN – CHUYÊN NGHIỆP</span>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#111827] mb-6 leading-snug md:leading-normal">
+                  CỬA HÀNG MUA BÁN ĐỒ CŨ VIỆT ANH <br />
+                  {/* Thêm một chút margin-top cho dòng dưới bằng cách đổi span thành block hoặc inline-block */}
+                  <span className="text-[#bc700a] block mt-2 md:mt-4">
+                    XỬ LÝ NHANH – GỌN – CHUYÊN NGHIỆP
+                  </span>
                 </h2>
 
                 <p className="text-gray-600 text-lg leading-relaxed mb-6 text-justify">
@@ -237,25 +240,25 @@ export default function Home() {
                     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#e08a0d]/10 text-[#e08a0d] text-sm font-bold">
                       ✓
                     </div>
-                    <span className="font-semibold">Giá thu mua cao</span>
+                    <span className="font-semibold text-[#e08a0d]">Giá thu mua cao</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#e08a0d]/10 text-[#e08a0d] text-sm font-bold">
                       ✓
                     </div>
-                    <span className="font-semibold">Thanh toan nhanh</span>
+                    <span className="font-semibold text-[#e08a0d]">Thanh toan nhanh</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#e08a0d]/10 text-[#e08a0d] text-sm font-bold">
                       ✓
                     </div>
-                    <span className="font-semibold">Dọn dẹp trọn gói</span>
+                    <span className="font-semibold text-[#e08a0d]">Dọn dẹp trọn gói</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#e08a0d]/10 text-[#e08a0d] text-sm font-bold">
                       ✓
                     </div>
-                    <span className="font-semibold">Không ảnh hưởng hạ tầng</span>
+                    <span className="font-semibold text-[#e08a0d]">Không ảnh hưởng hạ tầng</span>
                   </div>
                 </div>
 
@@ -613,11 +616,12 @@ export default function Home() {
                         className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-[0_8px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_15px_35px_rgba(224,138,13,0.15)] transition-all duration-300"
                       >
 
-                        {/* IMAGE */}
-                        <div className="relative h-52 overflow-hidden">
+                        {/* IMAGE - ĐÃ TĂNG CHIỀU CAO TRÊN DESKTOP */}
+                        <div className="relative h-52 md:h-72 lg:h-80 overflow-hidden">
                           <img
                             src={item.image}
                             alt={item.title}
+                            // w-full h-full object-cover là bắt buộc để ảnh ko bị méo
                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                             onError={(e) => {
                               e.currentTarget.src =

@@ -106,7 +106,7 @@ export default function Header() {
                     <Link href="/thu-mua-cua-go">Thu Mua Cửa Gỗ Cũ</Link>
                   </li>
                   <li className="px-5 py-3.5 hover:bg-brand-50 text-gray-700 border-b border-gray-50 text-[13px] font-semibold hover:text-brand-600 hover:pl-8 transition-all duration-300">
-                    <Link href="/thu-mua-cong-nhom-duc">Thu Mua Cổng Nhôm Đúc</Link>
+                    <Link href="/thu-mua-cong-nhom">Thu Mua Cổng Nhôm Đúc</Link>
                   </li>
                   <li className="px-5 py-3.5 hover:bg-brand-50 text-gray-700 border-b border-gray-50 text-[13px] font-semibold hover:text-brand-600 hover:pl-8 transition-all duration-300">
                     <Link href="/thu-mua-cua-cuon">Thu Mua Cửa Cuốn Cũ</Link>
@@ -129,7 +129,7 @@ export default function Header() {
               <div className="absolute left-0 top-full w-[340px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <ul className="bg-white border-t-4 border-brand-600 shadow-2xl rounded-b-lg overflow-hidden text-left">
                   <li className="px-5 py-3.5 hover:bg-brand-50 text-gray-700 border-b border-gray-50 text-[13px] font-semibold hover:text-brand-600 hover:pl-8 transition-all duration-300">
-                    <Link href="/mua-thiet-bi-ve-sinh-cu">Thu Mua Thiết Bị Vệ Sinh Cũ</Link>
+                    <Link href="/thu-mua-thiet-bi-ve-sinh">Thu Mua Thiết Bị Vệ Sinh Cũ</Link>
                   </li>
                   <li className="px-5 py-3.5 hover:bg-brand-50 text-gray-700 border-b border-gray-50 text-[13px] font-semibold hover:text-brand-600 hover:pl-8 transition-all duration-300">
                     <Link href="/thu-mua-ton-cu">Thu Mua Tôn Cũ</Link>
@@ -138,13 +138,13 @@ export default function Header() {
                     <Link href="/thu-mua-xac-nha-xuong">Thu Mua Xác Nhà Kho Xưởng</Link>
                   </li>
                   <li className="px-5 py-3.5 hover:bg-brand-50 text-gray-700 border-b border-gray-50 text-[13px] font-semibold hover:text-brand-600 hover:pl-8 transition-all duration-300">
-                    <Link href="/thu-mua-do-go-cu-tai-nha-tphcm">Thu Mua Đồ Gỗ Cũ</Link>
+                    <Link href="/thu-mua-do-go">Thu Mua Đồ Gỗ Cũ</Link>
                   </li>
                   <li className="px-5 py-3.5 hover:bg-brand-50 text-gray-700 border-b border-gray-50 text-[13px] font-semibold hover:text-brand-600 hover:pl-8 transition-all duration-300">
-                    <Link href="/thu-mua-tu-bep-go">Thu Mua Tủ Bếp Cũ</Link>
+                    <Link href="/thu-mua-tu-bep">Thu Mua Tủ Bếp Cũ</Link>
                   </li>
                   <li className="px-5 py-3.5 hover:bg-brand-50 text-gray-700 border-b border-gray-50 text-[13px] font-semibold hover:text-brand-600 hover:pl-8 transition-all duration-300">
-                    <Link href="/thu-mua-do-go-cu-moi">Thu Mua Bàn Ghế Gỗ Cũ</Link>
+                    <Link href="/thu-mua-ban-ghe-go">Thu Mua Bàn Ghế Gỗ Cũ</Link>
                   </li>
                 </ul>
               </div>
