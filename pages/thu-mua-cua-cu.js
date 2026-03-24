@@ -2,158 +2,193 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 export default function ThuMuaCuaCu() {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Thu Mua Cửa Cũ, Thanh Lý Cửa Gỗ, Cửa Sắt, Cửa Nhôm",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Đồ Cũ Việt Anh",
-      "image": "https://thanhlycuacutphcm.com/logo-viet-anh.png",
-      "telephone": "0988257479",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "14 Lê Văn Khương",
-        "addressLocality": "Đông Thạnh, Hóc Môn",
-        "addressRegion": "Hồ Chí Minh",
-        "postalCode": "700000",
-        "addressCountry": "VN"
-      }
-    },
-    "areaServed": "Hồ Chí Minh",
-    "description": "Dịch vụ thu mua cửa cũ giá cao tại TPHCM. Thu mua cửa gỗ cũ, cửa sắt, cửa nhôm kính, tháo dỡ trọn gói, thanh toán ngay 1 lần duy nhất."
-  };
+  const allDoors = [
+    { title: "Cửa Gỗ Cũ", list: ["Cửa gỗ Căm Xe", "Cửa gỗ Gõ Đỏ", "Cửa gỗ Lim", "Cửa gỗ Hương", "Cửa gỗ 2, 4 cánh", "Cửa gỗ thông phòng"] },
+    { title: "Cửa Nhôm Cũ", list: ["Nhôm Xingfa cao cấp", "Nhôm kính cường lực", "Cửa sổ nhôm kính", "Vách ngăn nhôm", "Cửa nhôm cỏ"] },
+    { title: "Cửa Sắt - Cổng", list: ["Cửa sắt kéo Đài Loan", "Cổng sắt hộp", "Cửa sắt cuốn", "Cổng nhôm đúc", "Hàng rào sắt"] },
+    { title: "Cửa Nhựa - Khác", list: ["Cửa nhựa lõi thép", "Cửa Eurowindow", "Nhựa giả gỗ ABS", "Cửa thoát hiểm", "Cửa inox cũ"] }
+  ];
+
+  const processSteps = [
+    { step: "01", title: "Tiếp nhận", desc: "Gửi ảnh qua Zalo 0966.350.979" },
+    { step: "02", title: "Khảo sát", desc: "Báo giá cao nhất ngay lập tức" },
+    { step: "03", title: "Chốt giá", desc: "Thống nhất thời gian tháo dỡ" },
+    { step: "04", title: "Thi công", desc: "Thợ tháo dỡ nhanh, sạch sẽ" },
+    { step: "05", title: "Tất toán", desc: "Thanh toán tiền mặt tại chỗ" }
+  ];
+
+  const localDistricts = [
+    "Quận 1", "Quận 3", "Quận 4", "Quận 5", "Quận 6", "Quận 7", "Quận 8", "Quận 10", "Quận 11", "Quận 12",
+    "Tân Bình", "Bình Tân", "Gò Vấp", "Phú Nhuận", "Tân Phú", "Bình Thạnh", "Thủ Đức", "Bình Chánh", "Hóc Môn", "Nhà Bè", "Củ Chi"
+  ];
 
   return (
-    <div className="bg-white">
+    <div className="min-h-screen bg-white font-sans text-[#111827]">
       <Head>
-        <title>Thu Mua Cửa Cũ Giá Cao Tận Nơi Tại TPHCM | Đồ Cũ Việt Anh</title>
-        <meta name="description" content="Đồ Cũ Việt Anh chuyên thu mua cửa cũ giá cao. Nhận thanh lý cửa gỗ cũ, cửa sắt, cửa nhôm kính, định giá chính xác, hỗ trợ tháo dỡ không làm hỏng tường nhà." />
-        <meta name="keywords" content="thu mua cửa cũ, thu mua cửa gỗ cũ, thu mua cửa sắt cũ, thu mua cửa nhôm Xingfa, thanh lý cửa cũ TPHCM" />
-        <meta property="og:title" content="Thu Mua Cửa Cũ Giá Cao Tại TPHCM | Uy Tín, Tháo Dỡ Trọn Gói" />
-        <meta property="og:description" content="Chuyên Thu Mua Cửa Gỗ, Cửa Nhôm, Cửa Sắt Cũ Giá Cao Toàn Quốc⭐Báo Giá Tận Nơi 24/7. Hỗ trợ tháo dỡ vận chuyển miễn phí." />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://thanhlycuacutphcm.com/thu-mua-cua-cu" />
-        <link rel="canonical" href="https://thanhlycuacutphcm.com/thu-mua-cua-cu" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+        <title>Thu Mua Cửa Cũ TPHCM Giá Cao | Tận Nơi 30 Phút | Việt Anh</title>
+        <meta name="description" content="Chuyên thu mua cửa gỗ cũ, nhôm Xingfa, sắt kéo tại TPHCM. Khảo sát tận nơi, tháo dỡ chuyên nghiệp, thanh toán ngay." />
       </Head>
 
-      {/* PAGE BANNER */}
-      <section className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center overflow-hidden bg-[#111827]">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/banner-viet-anh.png"
-            alt="Thu Mua Cửa Cũ Giá Cao Đồ Cũ Việt Anh"
-            className="w-full h-full object-cover opacity-40 mix-blend-overlay"
-            onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=2000&auto=format&fit=crop'; }}
-          />
+      {/* HERO: Tăng leading cho tiêu đề, giảm py để banner gọn hơn */}
+      <section className="relative py-10 md:py-20 bg-[#111827] text-white">
+        <div className="absolute inset-0 opacity-20">
+          <img src="/thu-mua-cua-cu-hcm.jpg" alt="Thu mua cửa cũ" className="w-full h-full object-cover" />
         </div>
-        <div className="relative z-10 text-center px-6 mt-10">
-          <h1 className="text-3xl md:text-5xl font-black text-white mb-4 uppercase drop-shadow-lg tracking-tight">Dịch Vụ Thu Mua Cửa Cũ <span className="text-[#e08a0d]">Giá Cao</span></h1>
-          <div className="flex items-center justify-center gap-2 text-sm md:text-base text-gray-300 font-medium">
-            <Link href="/" className="hover:text-[#e08a0d] transition-colors">Trang Chủ</Link>
-            <span>/</span>
-            <span>Thu Mua Đồ Cũ</span>
-            <span>/</span>
-            <span className="text-white">Thu Mua Cửa Cũ</span>
+        <div className="max-w-[1200px] mx-auto px-6 relative z-10 text-center md:text-left">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-black uppercase leading-snug md:leading-[1.2] mb-4 !leading-[1.4]">
+            THU MUA <span className="text-[#e08a0d]">CÁC LOẠI CỬA CŨ</span> <br />
+            GIÁ CAO TẠI TPHCM
+          </h1>
+          <p className="text-base md:text-xl text-gray-300 max-w-2xl mb-8 leading-relaxed font-medium">
+            Việt Anh chuyên thanh lý cửa gỗ, nhôm kính, cửa sắt.
+            <span className="block md:inline text-[#e08a0d]"> Thu mua tận nơi, tháo dỡ sạch sẽ ngay trong ngày.</span>
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-3">
+            <Link href="tel:0966350979" className="bg-[#e08a0d] text-white font-black py-3.5 px-8 rounded-xl text-lg hover:scale-105 transition-all text-center">
+              GỌI: 0966.350.979
+            </Link>
+            <Link href="https://zalo.me/0966350979" className="bg-white text-[#111827] font-black py-3.5 px-8 rounded-xl text-lg hover:bg-gray-100 transition-all text-center">
+              ZALO BÁO GIÁ
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* MAIN CONTENT */}
-      <section className="py-16 md:py-24">
-        <div className="max-w-[1200px] mx-auto px-6 md:px-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+      {/* DANH MỤC: Giảm py-16 xuống py-10 để khít với Hero */}
+      <section className="py-4 bg-white">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-4xl font-black uppercase mb-2">
+              DANH MỤC <span className="text-[#bc700a]">CỬA THU MUA</span>
+            </h2>
+            <div className="w-16 h-1 bg-[#bc700a] mx-auto rounded-full"></div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            {allDoors.map((cat, i) => (
+              <div key={i} className="bg-gray-50 p-5 rounded-2xl border border-gray-100 hover:border-[#e08a0d]/30 transition-all shadow-sm">
+                <h3 className="text-lg font-black text-[#e08a0d] mb-3 uppercase border-b border-gray-200 pb-2">{cat.title}</h3>
+                <ul className="space-y-1.5">
+                  {cat.list.map((item, idx) => (
+                    <li key={idx} className="flex items-center gap-2 text-[14px] md:text-[15px] font-semibold text-gray-700 leading-tight">
+                      <span className="text-[#bc700a] text-[10px]">●</span> {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* BẢNG GIÁ THAM KHẢO (PHẦN BỔ SUNG CHO SEO) - Ép sát padding */}
+      <section className="py-6 md:py-8 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-[1000px] mx-auto px-6">
+          <div className="text-center mb-5">
+            <h2 className="text-xl md:text-2xl font-black uppercase mb-1">
+              BẢNG GIÁ <span className="text-[#bc700a]">THU MUA THAM KHẢO</span>
+            </h2>
+            <p className="text-gray-500 text-[12px] md:text-[13px] leading-snug">Giá thu mua thực tế có thể cao hơn tùy thuộc vào độ mới, kích thước và chất liệu.</p>
+          </div>
+          <div className="overflow-x-auto rounded-xl shadow-sm border border-gray-200">
+            <table className="w-full bg-white text-left text-[13px] md:text-[14px]">
+              <thead className="bg-[#111827] text-white uppercase font-bold text-[11px] md:text-[13px]">
+                <tr>
+                  <th className="py-2.5 px-3 md:px-4">Loại Cửa</th>
+                  <th className="py-2.5 px-3 md:px-4">Đơn Vị</th>
+                  <th className="py-2.5 px-3 md:px-4">Giá Thu Mua (VNĐ)</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                <tr className="hover:bg-gray-50"><td className="py-2.5 px-3 md:px-4 font-bold">Cửa gỗ Căm Xe / Gõ Đỏ</td><td className="py-2.5 px-3 md:px-4">Bộ</td><td className="py-2.5 px-3 md:px-4 text-[#e08a0d] font-black">2.000.000 - 10.000.000+</td></tr>
+                <tr className="hover:bg-gray-50"><td className="py-2.5 px-3 md:px-4 font-bold">Cửa Nhôm Xingfa</td><td className="py-2.5 px-3 md:px-4">m2</td><td className="py-2.5 px-3 md:px-4 text-[#e08a0d] font-black">500.000 - 1.200.000</td></tr>
+                <tr className="hover:bg-gray-50"><td className="py-2.5 px-3 md:px-4 font-bold">Cửa Sắt Kéo Đài Loan</td><td className="py-2.5 px-3 md:px-4">Bộ</td><td className="py-2.5 px-3 md:px-4 text-[#e08a0d] font-black">800.000 - 3.500.000</td></tr>
+                <tr className="hover:bg-gray-50"><td className="py-2.5 px-3 md:px-4 font-bold">Cổng Nhôm Đúc</td><td className="py-2.5 px-3 md:px-4">Bộ</td><td className="py-2.5 px-3 md:px-4 text-[#e08a0d] font-black">Liên hệ khảo sát</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* QUY TRÌNH: Giảm khoảng cách dọc */}
+      <section className="py-10 bg-[#111827] text-white">
+        <div className="max-w-[1200px] mx-auto px-6 text-center">
+          <h2 className="text-2xl md:text-3xl font-black uppercase mb-8">
+            QUY TRÌNH <span className="text-[#e08a0d]">5 BƯỚC NHANH GỌN</span>
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            {processSteps.map((p, i) => (
+              <div key={i} className="flex flex-col items-center group">
+                <div className="w-12 h-12 bg-[#e08a0d] rounded-full flex items-center justify-center text-xl font-black mb-3 group-hover:rotate-12 transition-transform shadow-lg shadow-[#e08a0d]/20">
+                  {p.step}
+                </div>
+                <h4 className="text-sm md:text-base font-bold mb-1 group-hover:text-[#e08a0d]">{p.title}</h4>
+                <p className="text-gray-400 text-[12px] leading-snug">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* NỘI DUNG CHỮ DÀI (PHẦN BỔ SUNG CHO SEO GOOGLE BOT) */}
+      <section className="py-6 md:py-8 bg-white border-b border-gray-100">
+        <div className="max-w-[900px] mx-auto px-6 text-gray-700">
+          <h2 className="text-lg md:text-2xl font-black uppercase text-[#e08a0d] mb-4 !leading-[1.2]">
+            TẠI SAO VIỆT ANH LÀ ĐƠN VỊ THU MUA UY TÍN?
+          </h2>
+          <p className="mb-4 text-[13px] md:text-[14px] leading-relaxed">
+            Khi tiến hành sửa chữa, việc xử lý những bộ cửa cũ (cửa gỗ, nhôm kính, cửa sắt) luôn làm đau đầu nhiều gia chủ. Nếu bỏ đi thì lãng phí, giữ lại thì chật chội. <strong>Cửa hàng đồ cũ Việt Anh</strong> mang đến giải pháp thanh lý trọn gói với tiêu chí: <strong>Giá cao - Nhanh gọn - Chuyên nghiệp</strong>.
+          </p>
+          <div className="space-y-3">
             <div>
-              <span className="block text-sm font-bold tracking-widest text-[#e08a0d] uppercase mb-3">TỔNG KHO VIỆT ANH</span>
-              <h2 className="text-3xl md:text-4xl font-black text-[#111827] mb-6 leading-tight">CHUYÊN NHẬN THU MUA <span className="text-[#bc700a]">CÁC LOẠI CỬA ĐÃ QUA SỬ DỤNG</span></h2>
-              <div className="w-16 h-1 bg-[#bc700a] mb-8 rounded-full"></div>
-
-              <div className="text-gray-600 text-lg leading-relaxed space-y-5 text-justify">
-                <p><strong>Đồ Cũ Việt Anh</strong> nhận thu mua toàn bộ các dòng cửa cũ, phế liệu từ cửa công trình dự án thanh lý trên địa bàn <strong>TP.HCM</strong> và các tỉnh lân cận. Nếu nhà bạn đang sửa chữa, hoặc doanh nghiệp muốn thay thế cửa hàng loạt, hãy liên hệ với chúng tôi để lấy ngay cơ hội thu hồi vốn tốt nhất!</p>
-                <p>Khắc phục hoàn toàn nỗi lo: tháo dỡ không đúng kỹ thuật làm hư hại tường, không biết cách vận chuyển những cánh cửa gỗ dài và nặng, hoặc bị ép giá không thương tiếc. Quy trình của chúng tôi là: <strong>Khảo sát nhanh - Chốt giá ngay - Tháo dỡ an toàn - Dọn dẹp sạch sẽ mặt bằng.</strong></p>
-              </div>
-
-              <div className="mt-8 flex items-center gap-4">
-                <a href="tel:0988257479" className="inline-flex items-center gap-3 bg-[#e08a0d] text-white px-8 py-3 rounded-xl font-bold uppercase tracking-wider hover:bg-[#bc700a] transition-all shadow-[0_5px_15px_rgba(224,138,13,0.3)] hover:-translate-y-1">
-                  <span>📞 GỌI KHẢO SÁT MIỄN PHÍ</span>
-                </a>
-              </div>
+              <h3 className="font-bold text-[#e08a0d] text-[14px] md:text-[15px] flex items-center gap-1.5">
+                <span className="text-lg">✔</span> Định giá chính xác - Không ép giá
+              </h3>
+              <p className="text-[12px] md:text-[13px] mt-1 leading-snug">Chúng tôi am hiểu sâu sắc giá trị của từng loại gỗ (Lim, Hương, Căm Xe) cũng như các hệ nhôm. Cam kết báo giá sát với thực tế, tuyệt đối không ép giá.</p>
             </div>
-
-            <div className="grid grid-cols-2 gap-4">
-              <div className="rounded-3xl overflow-hidden shadow-xl aspect-square">
-                <img src="/thu-mua-cua-cu-gia-cao.jpg" alt="Thu Mua Cửa Cu" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                  onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=800&auto=format&fit=crop'; }} />
-              </div>
-              <div className="rounded-3xl overflow-hidden shadow-xl aspect-square mt-8">
-                <img src="/thu-mua-cua-go.jpg" alt="Thu Mua Cửa Gỗ" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                  onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=800&auto=format&fit=crop'; }} />
-              </div>
+            <div>
+              <h3 className="font-bold text-[#e08a0d] text-[14px] md:text-[15px] flex items-center gap-1.5">
+                <span className="text-lg">✔</span> Tháo dỡ an toàn, sạch sẽ
+              </h3>
+              <p className="text-[12px] md:text-[13px] mt-1 leading-snug">Việc tháo dỡ cửa cần kỹ thuật cao. Việt Anh có đầy đủ thiết bị, đảm bảo tháo dỡ trong ngày và thu dọn xà bần sạch sẽ trước khi rời đi.</p>
             </div>
           </div>
-
-          {/* CÁC LOẠI CỬA NHẬN THU MUA */}
-          <div className="mb-20">
-            <div className="text-center mb-12">
-              <span className="block text-sm font-bold tracking-widest text-[#e08a0d] uppercase mb-3">DANH MỤC THU MUA TẬN NƠI</span>
-              <h2 className="text-3xl md:text-4xl font-black text-[#111827] uppercase">CÁC LOẠI CỬA CŨ <span className="text-[#bc700a]">GIÁ CAO</span></h2>
-              <div className="w-20 h-1 bg-gradient-to-r from-[#bc700a] to-[#e08a0d] mx-auto mt-6 rounded-full"></div>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                { title: 'Thu Mua Cửa Gỗ Cũ', desc: 'Nhận các loại cửa bằng gỗ tự nhiên (Lim, Xoan Đào, Hương...), không ngại quy mô lớn nhỏ.', img: '/thu-mua-cua-go.jpg', link: '/thu-mua-cua-go' },
-                { title: 'Thu Mua Cửa Sắt Cũ', desc: 'Thanh lý cổng sắt, rào bảo vệ, cửa kéo sắt phế liệu trọn gói với giá tái chế tối đa.', img: '/thu-mua-cua-sat-cu.jpg', link: '/thu-mua-cua-sat' },
-                { title: 'Thu Mua Cửa Cuốn', desc: 'Cửa cuốn nhôm, cửa kéo vân sóng, thu lại kèm motor đi lốc từ các nhà xưởng, kho bãi.', img: '/thu-mua-cua-cuon-cu.jpg', link: '/thu-mua-cua-cuon' },
-                { title: 'Thu Mua Cửa Nhôm Xingfa', desc: 'Kính cường lực, vách kính văn phòng, khung nhôm phế liệu tháo dỡ không bể vỡ.', img: '/thu-mua-cua-nhom-xingfa.jpg', link: '/thu-mua-cua-nhom-xingfa' },
-                { title: 'Thu Mua Cổng Nhôm Đúc', desc: 'Cổng khu trang trại biệt thự, nhà phố, đúc khối kim loại đồng nguyên chất nguyên tấm.', img: '/thu-mua-cong-nhom-duc.jpg', link: '/thu-mua-cong-nhom-duc' },
-                { title: 'Thu Mua Khung Tôn Cũ', desc: 'Xà gồ chịu lực mái che, lợp sóng phế liệu kèm cửa công trình định giá thu mua toàn diện.', img: '/thu-mua-ton-cu.jpg', link: '/thu-mua-ton-cu' },
-              ].map((item, i) => (
-                <Link key={i} href={item.link} className="group bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl hover:border-[#e08a0d]/30 transition-all duration-300 flex flex-col hover:-translate-y-2">
-                  <div className="aspect-[4/3] overflow-hidden">
-                    <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                      onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=800&auto=format&fit=crop'; }} />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="font-black text-xl text-[#111827] mb-2 group-hover:text-[#e08a0d] transition-colors">{item.title}</h3>
-                    <p className="text-gray-600 text-[15px]">{item.desc}</p>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* QUY TRÌNH & CAM KẾT (SEO TEXT) */}
-          <div className="bg-gray-50 rounded-3xl p-8 md:p-12 mb-16 border border-gray-100">
-            <h2 className="text-2xl md:text-3xl font-black text-[#111827] mb-6">Tại Sao Chọn Dịch Vụ Thanh Lý Cửa Cũ Của Chúng Tôi?</h2>
-            <div className="prose prose-lg max-w-none text-gray-700 text-justify">
-              <p>Hiện nay trên thị trường có không ít đơn vị cá nhân lẻ tẻ thu mua tháo dỡ nội thất, tuy nhiên đa phần hay gặp <strong>tình huống rủi ro trong quá trình gỡ khung bao cửa vì không có đủ trình độ chuyên môn neo đỡ tường</strong>. Đồng thời thường ép giá sau khi cạy cửa xong.</p>
-              <p>Sở hữu đội bốc xếp nội bộ hùng hậu, trang bị đủ xe cẩu chở kho riêng biệt, Việt Anh cam kết vững chắc:</p>
-              <ul className="list-disc pl-5 mt-4 space-y-2">
-                <li>Khảo sát chuẩn xác giá trị thực của dòng gỗ / nhôm sắt. Đi giá sòng phẳng <strong>chênh lệch lớn hơn 30%</strong> so với các dịch vụ thanh lý đồ cũ tự do.</li>
-                <li>Đội kỹ thuật chuyên thực hiện hàng trăm công trình tháo dỡ quy mô dự án biệt thự có bọc dán bảo vệ hoàn trả mặt bằng gốc.</li>
-                <li>Quá trình chốt trực tiếp chỉ 10 phút, thanh toán ngay tiền mặt tại chỗ tuyệt đối minh bạch một lần duy nhất.</li>
-              </ul>
-            </div>
-          </div>
-
         </div>
       </section>
 
-      {/* CTA BOTTOM */}
-      <section className="py-20 bg-[#111827] relative mt-auto overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-20">
-          <img src="/banner-viet-anh.png" alt="Do cu" className="w-full h-full object-cover" />
-        </div>
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
-          <h2 className="text-3xl md:text-5xl font-black mb-6 leading-tight">Gia đình, Công ty bạn đang có Cửa cần vứt đi?</h2>
-          <p className="text-xl md:text-2xl text-gray-300 font-medium mb-10">Mọi báo giá được hoàn thành trong vòng chưa tới 15 phút với độ chuyên nghiệp tuyệt đối!</p>
-          <a href="tel:0988257479" className="inline-flex items-center gap-3 bg-white text-[#111827] px-10 py-5 rounded-xl font-black uppercase tracking-wider text-xl hover:bg-[#e08a0d] hover:text-white shadow-[0_15px_30px_rgba(255,255,255,0.2)] transition-all duration-300 hover:-translate-y-2">
-            <span className="text-3xl animate-pulse">📞</span> CHỐT GIÁ NGAY ZALO: 0988.257.479
-          </a>
+      {/* CAM KẾT: Ép sát margin */}
+      <section className="py-6 pt-2 pb-0 bg-white">
+        <div className="max-w-[900px] mx-auto px-6">
+          <div className="bg-gray-50 p-6 md:p-8 rounded-3xl border border-gray-100 shadow-inner">
+            <h2 className="text-2xl font-black uppercase mb-4 text-[#111827]">Vì sao chọn Việt Anh?</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="flex gap-3 items-start">
+                <span className="text-xl">💰</span>
+                <p className="text-[14px] leading-snug"><strong>Giá cao:</strong> Định giá sát thực tế gỗ quý và nhôm hệ.</p>
+              </div>
+              <div className="flex gap-3 items-start">
+                <span className="text-xl">⚡</span>
+                <p className="text-[14px] leading-snug"><strong>Nhanh:</strong> Tháo dỡ và dọn dẹp mặt bằng ngay trong ngày.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* LOCAL SEO: Rất nhẹ và khít */}
+      <section className="py-4 border-t border-gray-50 mt-6">
+        <div className="max-w-[1200px] mx-auto px-6 text-center">
+          <p className="text-[13px] font-bold text-orange-400 mb-3 uppercase tracking-widest">Khu vực thu mua 24/7</p>
+          <div className="flex flex-wrap justify-center gap-1.5 md:gap-2">
+            {localDistricts.map((item, index) => (
+              <span key={index} className="text-[11px] md:text-[12px] text-gray-500 bg-white border border-gray-100 px-2 py-0.5 rounded shadow-sm hover:text-[#e08a0d] cursor-default transition-colors">
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }

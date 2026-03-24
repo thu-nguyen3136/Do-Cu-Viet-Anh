@@ -220,11 +220,11 @@ export default function Home() {
                   Giới thiệu Việt Anh
                 </span>
 
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#111827] mb-6 leading-snug md:leading-normal">
-                  CỬA HÀNG MUA BÁN ĐỒ CŨ VIỆT ANH <br />
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#111827] mb-6 leading-snug md:leading-normal text-center">
+                  THU MUA ĐỒ CŨ VIỆT ANH <br />
                   {/* Thêm một chút margin-top cho dòng dưới bằng cách đổi span thành block hoặc inline-block */}
                   <span className="text-[#bc700a] block mt-2 md:mt-4">
-                    XỬ LÝ NHANH – GỌN – CHUYÊN NGHIỆP
+                    Dịch Vụ Nhanh Gọn - Chuyên Nghiệp - Uy Tín
                   </span>
                 </h2>
 
