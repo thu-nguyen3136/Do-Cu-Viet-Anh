@@ -52,7 +52,7 @@ export default function Home() {
       name: 'Chị Oanh (Gò Vấp)',
       role: 'Kinh doanh Khách Sạn',
       rating: 5,
-      avatar: '/tran-thi-hoang-oanh.jpg',
+      avatar: '/tran-hoang-oanh.jpg',
       comment: 'Tôi đã thanh lý hệ thống phòng khách sạn cũ, giá Việt Anh đưa ra kịch kim, cao hơn các bên khác báo giá đến 20-30%. Thanh toán tiền mặt tại chỗ.'
     },
     {
