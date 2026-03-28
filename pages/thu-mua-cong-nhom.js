@@ -9,6 +9,12 @@ export default function ThuMuaCongNhomDucPage() {
       <Head>
         <title>Thu Mua Cổng Nhôm Đúc - Đồ Cũ Việt Anh</title>
         <meta name="description" content="Thu Mua Cổng Nhôm Đúc" />
+
+        <meta property="og:title" content="Thu Mua Cổng Nhôm Đúc - Đồ Cũ Việt Anh" />
+        <meta property="og:description" content="Thu Mua Cổng Nhôm Đúc" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://thanhlycuacutphcm.com/thu-mua-cong-nhom" />
+        <link rel="canonical" href="https://thanhlycuacutphcm.com/thu-mua-cong-nhom" />
         <meta name="keywords" content="Bạn đang có nhu cầu thanh lý cổng nhôm đúc cũ nhưng chưa biết ở đâu thu mua uy tín và giá cao? Đồ cũ Việt Anh là chuyên gia thu mua cổng nhôm đúc tận nơi với nhiều năm kinh nghiệm trong lĩnh vực thu mua phế liệu. Chúng tôi cam kết mang đến cho quý khách hàng dịch vụ thu mua chuyên nghiệp, nhanh chóng và giá cả cạnh tranh nhất thị trường." />
       </Head>
 
@@ -22,7 +28,7 @@ export default function ThuMuaCongNhomDucPage() {
 
             {/* Tiêu đề trang */}
             <div className="mb-6 pb-2 border-b-2 border-blue-600 inline-block">
-              <h2 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Cổng Nhôm Đúc</h2>
+              <h1 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Cổng Nhôm Đúc</h1>
             </div>
 
             <div className="prose max-w-none text-[16px] md:text-[20px] leading-relaxed">

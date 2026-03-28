@@ -10,6 +10,12 @@ export default function MuaThietBiVeSinhCuPage() {
       <Head>
         <title>Mua Thiết Bị Vệ Sinh Cũ - Đồ Cũ Việt Anh</title>
         <meta name="description" content="Đồ Cũ Việt Anh nhận thu mua các thiết bị vệ sinh bao gồm nhiều thứ như bồn cầu, bồn lavabo, bồn rửa tay, bồn tắm" />
+
+        <meta property="og:title" content="Mua Thiết Bị Vệ Sinh Cũ - Đồ Cũ Việt Anh" />
+        <meta property="og:description" content="Đồ Cũ Việt Anh nhận thu mua các thiết bị vệ sinh bao gồm nhiều thứ như bồn cầu, bồn lavabo, bồn rửa tay, bồn tắm" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://thanhlycuacutphcm.com/thu-mua-thiet-bi-ve-sinh" />
+        <link rel="canonical" href="https://thanhlycuacutphcm.com/thu-mua-thiet-bi-ve-sinh" />
       </Head>
 
       <main className="max-w-[1200px] mx-auto px-4 py-8">
@@ -22,7 +28,7 @@ export default function MuaThietBiVeSinhCuPage() {
 
             {/* Tiêu đề trang */}
             <div className="mb-6 pb-2 border-b-2 border-blue-600 inline-block">
-              <h2 className="text-2xl font-bold uppercase text-[#000099]">Mua Thiết Bị Vệ Sinh Cũ</h2>
+              <h1 className="text-2xl font-bold uppercase text-[#000099]">Mua Thiết Bị Vệ Sinh Cũ</h1>
             </div>
 
             <div className="prose max-w-none text-[16px] md:text-[20px] leading-relaxed">

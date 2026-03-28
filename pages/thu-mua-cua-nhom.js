@@ -9,6 +9,12 @@ export default function ThuMuaCuaNhomPage() {
       <Head>
         <title>Thu Mua Cửa Nhôm - Đồ Cũ Việt Anh</title>
         <meta name="description" content="Thu Mua Đồ Cũ Việt Anh chuyên nhận thu mua các dòng của nhôm cũ đã qua sử dụng như: cửa nhôm kính, cửa nhôm xingfa giá cao tại khu vực TP.HCM." />
+
+        <meta property="og:title" content="Thu Mua Cửa Nhôm - Đồ Cũ Việt Anh" />
+        <meta property="og:description" content="Thu Mua Đồ Cũ Việt Anh chuyên nhận thu mua các dòng của nhôm cũ đã qua sử dụng như: cửa nhôm kính, cửa nhôm xingfa giá cao tại khu vực TP.HCM." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://thanhlycuacutphcm.com/thu-mua-cua-nhom" />
+        <link rel="canonical" href="https://thanhlycuacutphcm.com/thu-mua-cua-nhom" />
       </Head>
 
       <main className="max-w-[1200px] mx-auto px-4 py-8">
@@ -21,7 +27,7 @@ export default function ThuMuaCuaNhomPage() {
 
             {/* Tiêu đề trang */}
             <div className="mb-6 pb-2 border-b-2 border-blue-600 inline-block">
-              <h2 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Cửa Nhôm</h2>
+              <h1 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Cửa Nhôm</h1>
             </div>
 
             <div className="prose max-w-none text-[16px] md:text-[20px] leading-relaxed">

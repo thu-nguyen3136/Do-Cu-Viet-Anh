@@ -10,23 +10,27 @@ export default function Article() {
           name="description"
           content="Việt Anh chuyên thu mua đồ cũ giá cao tại TP.HCM. Thu mua cửa cũ, đồ gỗ, nhà xưởng, thiết bị vệ sinh. Báo giá nhanh, thanh toán ngay."
         />
-        <link rel="canonical" href="https://thanhlycuacutphcm.comtin-tuc/thu-mua-do-cu-uy-tin-tphcm" />
+        <link rel="canonical" href="https://thanhlycuacutphcm.com/tin-tuc/thu-mua-do-cu-uy-tin-tphcm" />
         <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "Đồ Cũ Việt Anh",
-              "image": "https://thanhlycuacutphcm.comthu-mua-do-cu-uy-tin-hcm.jpeg",
-              "telephone": "0988257479",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Quận 12",
-                "addressLocality": "TP.HCM",
-                "addressCountry": "VN"
+              "@type": "Article",
+              "headline": "Đơn Vị Thu Mua Đồ Cũ Uy Tín Tại TP.HCM Giá Cao",
+              "image": "https://thanhlycuacutphcm.com/thu-mua-do-cu-uy-tin-hcm.jpeg",
+              "url": "https://thanhlycuacutphcm.com/tin-tuc/thu-mua-do-cu-uy-tin-tphcm",
+              "author": {
+                "@type": "Organization",
+                "name": "Đồ Cũ Việt Anh"
               },
-              "url": "https://thanhlycuacutphcm.comtin-tuc/thu-mua-do-cu-uy-tin-tphcm",
-              "priceRange": "₫₫"
+              "publisher": {
+                "@type": "Organization",
+                "name": "Đồ Cũ Việt Anh",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://thanhlycuacutphcm.com/logo-viet-anh.png"
+                }
+              }
             }
           `}
         </script>

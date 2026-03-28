@@ -10,6 +10,12 @@ export default function ThuMuaDoGoCuMoiXuaVaNayPage() {
       <Head>
         <title>Thu Mua Đồ Gỗ Cũ Mới, Xưa Và Nay - Đồ Cũ Việt Anh</title>
         <meta name="description" content="DỊCH VỤ THU MUA ĐỒ GỖ CŨ GIÁ CAO XƯA VÀ NAY cũ người mới ta, mua của người chán bán cho người cần, mua hết, chuyên thu mua mọi sản phẩm liên quan đến GỖ,CŨ, MỚI, XƯA, ĐẾN NAY." />
+
+        <meta property="og:title" content="Thu Mua Đồ Gỗ Cũ Mới, Xưa Và Nay - Đồ Cũ Việt Anh" />
+        <meta property="og:description" content="DỊCH VỤ THU MUA ĐỒ GỖ CŨ GIÁ CAO XƯA VÀ NAY cũ người mới ta, mua của người chán bán cho người cần, mua hết, chuyên thu mua mọi sản phẩm liên quan đến GỖ,CŨ, MỚI, XƯA, ĐẾN NAY." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://thanhlycuacutphcm.com/thu-mua-do-go" />
+        <link rel="canonical" href="https://thanhlycuacutphcm.com/thu-mua-do-go" />
       </Head>
 
       <main className="max-w-[1200px] mx-auto px-4 py-8">
@@ -22,7 +28,7 @@ export default function ThuMuaDoGoCuMoiXuaVaNayPage() {
 
             {/* Tiêu đề trang */}
             <div className="mb-6 pb-2 border-b-2 border-blue-600 inline-block">
-              <h2 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Đồ Gỗ Cũ Mới, Xưa Và Nay</h2>
+              <h1 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Đồ Gỗ Cũ Mới, Xưa Và Nay</h1>
             </div>
 
             <div className="prose max-w-none text-[16px] md:text-[18px] leading-relaxed">
