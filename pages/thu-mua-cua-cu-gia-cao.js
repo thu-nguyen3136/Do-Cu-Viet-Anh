@@ -9,6 +9,12 @@ export default function ThuMuaCuaCuPage() {
       <Head>
         <title>Thu Mua Cửa Cũ - Đồ Cũ Việt Anh</title>
         <meta name="description" content="Đồ Cũ Việt Anh nhận thu mua cửa cũ và thanh lý cửa cũ, cửa đã qua sử dụng giá cao tại TP.HCM." />
+
+        <meta property="og:title" content="Thu Mua Cửa Cũ - Đồ Cũ Việt Anh" />
+        <meta property="og:description" content="Đồ Cũ Việt Anh nhận thu mua cửa cũ và thanh lý cửa cũ, cửa đã qua sử dụng giá cao tại TP.HCM." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://thanhlycuacutphcm.com/thu-mua-cua-cu-gia-cao" />
+        <link rel="canonical" href="https://thanhlycuacutphcm.com/thu-mua-cua-cu-gia-cao" />
       </Head>
 
       <main className="max-w-[1200px] mx-auto px-4 py-8">
@@ -21,7 +27,7 @@ export default function ThuMuaCuaCuPage() {
 
             {/* Tiêu đề trang */}
             <div className="mb-6 pb-2 border-b-2 border-blue-600 inline-block">
-              <h2 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Cửa Cũ</h2>
+              <h1 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Cửa Cũ</h1>
             </div>
 
             <div className="prose max-w-none text-[16px] md:text-[18px] leading-relaxed">
@@ -73,15 +79,15 @@ export default function ThuMuaCuaCuPage() {
               <p className="mb-4"><strong>2. Danh Sách Các Loại Cửa Cũ Nhận Thu Mua Tận Nơi:</strong></p>
 
               <div className="mb-4 space-y-2">
-                <p><strong><em>- Mua cửa sắt Cũ</em></strong></p>
-                <p><strong><em>- Mua Cửa Cuốn Cũ</em></strong></p>
-                <p><strong><em>- Mua cửa gỗ cũ</em></strong></p>
-                <p><strong><em>- mua cửa nhôm cũ</em></strong></p>
+                <p><strong><em>- <Link href="/thu-mua-cua-sat" className="text-blue-600 hover:underline">Mua cửa sắt Cũ</Link></em></strong></p>
+                <p><strong><em>- <Link href="/thu-mua-cua-cuon" className="text-blue-600 hover:underline">Mua Cửa Cuốn Cũ</Link></em></strong></p>
+                <p><strong><em>- <Link href="/thu-mua-cua-go" className="text-blue-600 hover:underline">Mua cửa gỗ cũ</Link></em></strong></p>
+                <p><strong><em>- <Link href="/thu-mua-cua-nhom" className="text-blue-600 hover:underline">mua cửa nhôm cũ</Link></em></strong></p>
                 <p><strong><em>- Mua cửa nhựa lõi thép</em></strong></p>
-                <p><strong><em>- Thu mua tôn cũ</em></strong></p>
+                <p><strong><em>- <Link href="/thu-mua-ton-cu" className="text-blue-600 hover:underline">Thu mua tôn cũ</Link></em></strong></p>
                 <p><strong><em>- mua cầu thang cũ</em></strong></p>
-                <p><strong><em>- mua xác nhà cũ</em></strong></p>
-                <p><strong><em>- mua bàn ghế cũ</em></strong></p>
+                <p><strong><em>- <Link href="/thu-mua-xac-nha-xuong" className="text-blue-600 hover:underline">mua xác nhà cũ</Link></em></strong></p>
+                <p><strong><em>- <Link href="/thu-mua-ban-ghe-go" className="text-blue-600 hover:underline">mua bàn ghế cũ</Link></em></strong></p>
                 <p><strong><em>- mua bồn cầu cũ</em></strong></p>
                 <p><strong><em>- thu mua bồn cầu</em></strong></p>
               </div>

@@ -8,6 +8,12 @@ export default function ThuMuaCuaCuonPage() {
       <Head>
         <title>Thu Mua Cửa Cuốn - Đồ Cũ Việt Anh</title>
         <meta name="description" content="Thu Mua Đồ Cũ Việt Anh chuyên thu mua các loại cửa cuốn cũ của các công ty, nhà hàng, xí nghiệp, … với giá cả hợp lý phù hợp với giá thị trường hiện hành." />
+
+        <meta property="og:title" content="Thu Mua Cửa Cuốn - Đồ Cũ Việt Anh" />
+        <meta property="og:description" content="Thu Mua Đồ Cũ Việt Anh chuyên thu mua các loại cửa cuốn cũ của các công ty, nhà hàng, xí nghiệp, … với giá cả hợp lý phù hợp với giá thị trường hiện hành." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://thanhlycuacutphcm.com/thu-mua-cua-cuon" />
+        <link rel="canonical" href="https://thanhlycuacutphcm.com/thu-mua-cua-cuon" />
       </Head>
 
       <main className="max-w-[1200px] mx-auto px-4 py-8">
@@ -20,7 +26,7 @@ export default function ThuMuaCuaCuonPage() {
 
             {/* Tiêu đề trang */}
             <div className="mb-6 pb-2 border-b-2 border-blue-600 inline-block">
-              <h2 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Cửa Cuốn</h2>
+              <h1 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Cửa Cuốn</h1>
             </div>
 
             <div className="prose max-w-none text-[16px] md:text-[18px] leading-relaxed">
@@ -80,7 +86,7 @@ export default function ThuMuaCuaCuonPage() {
               </p>
 
               <p className="mb-4 text-justify px-2 md:px-4">
-                <span className="text-black text-[18px]">Tất cả các sản phẩm cửa cuốn cũ, hỏng, hay không được dùng đến mà khách hàng muốn bán chúng tôi đều có thể thu mua. Từ các loại cửa cuốn phổ biến tại Việt Nam hiện nay như: Cửa cuốn khe thoáng và cửa cuốn tấm liền. cụ thể các Cửa Cuốn Generaldoor , Cửa Cuốn Mitadoor , Cửa Cuốn Smartdoor , Cửa Cuốn Newdoor , Cửa Cuốn Titadoor , Cửa Cuốn Boossdoor , Cửa Cuốn Vitdoor , … công ty đều thu mua với mức giá phù hợp, sát với giá thị trường hiện hành.</span>
+                <span className="text-black text-[18px]">Tất cả các sản phẩm cửa cuốn cũ, hỏng, hay không được dùng đến mà khách hàng muốn bán chúng tôi đều có thể thu mua. Từ các loại cửa cuốn phổ biến tại Việt Nam hiện nay như: Cửa cuốn khe thoáng và cửa cuốn tấm liền. Cụ thể các Cửa Cuốn Generaldoor, Cửa Cuốn Mitadoor, Cửa Cuốn Smartdoor, Cửa Cuốn Newdoor, Cửa Cuốn Titadoor, Cửa Cuốn Boossdoor, Cửa Cuốn Vitdoor, … công ty đều thu mua với mức giá phù hợp, sát với giá thị trường hiện hành.</span>
               </p>
 
               <p className="mb-4 text-center px-2 md:px-4">&nbsp;</p>
@@ -104,7 +110,7 @@ export default function ThuMuaCuaCuonPage() {
               <p className="mb-4 text-center px-2 md:px-4">&nbsp;</p>
 
               <p className="mb-4 text-justify px-2 md:px-4">
-                <span className="text-black text-[18px]">Chúng tôi thu mua các sản phẩm của Công ty , xí nghiệp , nhà máy có nhu cầu bán theo nguyên tắc là vui vẻ, không ép giá, nhiệt tình và không quan ngại vấn đề khoảng cách.</span>
+                <span className="text-black text-[18px]">Chúng tôi thu mua các sản phẩm của Công ty, xí nghiệp, nhà máy có nhu cầu bán theo nguyên tắc là vui vẻ, không ép giá, nhiệt tình và không quan ngại vấn đề khoảng cách.</span>
               </p>
 
               <p className="mb-4 text-justify px-2 md:px-4">

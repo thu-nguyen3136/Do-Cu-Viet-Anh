@@ -15,18 +15,22 @@ export default function Article2() {
           {`
             {
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "Đồ Cũ Việt Anh",
+              "@type": "Article",
+              "headline": "Thu Mua Bồn Cầu Cũ & Thiết Bị Vệ Sinh Uy Tín Tại TP.HCM",
               "image": "https://thanhlycuacutphcm.com/thu-mua-bon-cau-cu.jpeg",
-              "telephone": "0988257479",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Quận 12",
-                "addressLocality": "TP.HCM",
-                "addressCountry": "VN"
-              },
               "url": "https://thanhlycuacutphcm.com/tin-tuc/thu-mua-bon-cau-cu-thiet-bi-ve-sinh",
-              "priceRange": "₫₫"
+              "author": {
+                "@type": "Organization",
+                "name": "Đồ Cũ Việt Anh"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Đồ Cũ Việt Anh",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://thanhlycuacutphcm.com/logo-viet-anh.png"
+                }
+              }
             }
           `}
         </script>

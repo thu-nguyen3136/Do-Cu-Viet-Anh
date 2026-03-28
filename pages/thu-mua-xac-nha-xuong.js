@@ -10,6 +10,12 @@ export default function ThuMuaXacNhaXuongPage() {
       <Head>
         <title>Thu Mua Xác Nhà Xưởng - Đồ Cũ Việt Anh</title>
         <meta name="description" content="Công ty Chúng tôi là đơn vị chuyên thu mua xác nhà cũ, xác nhà kho xưởng tại TPHCM giá tốt, Bạn đang cần xây dựng lại nhà ở, nhưng tài chính còn hạn chế." />
+
+        <meta property="og:title" content="Thu Mua Xác Nhà Xưởng - Đồ Cũ Việt Anh" />
+        <meta property="og:description" content="Công ty Chúng tôi là đơn vị chuyên thu mua xác nhà cũ, xác nhà kho xưởng tại TPHCM giá tốt, Bạn đang cần xây dựng lại nhà ở, nhưng tài chính còn hạn chế." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://thanhlycuacutphcm.com/thu-mua-xac-nha-xuong" />
+        <link rel="canonical" href="https://thanhlycuacutphcm.com/thu-mua-xac-nha-xuong" />
       </Head>
 
       <main className="max-w-[1200px] mx-auto px-4 py-8">
@@ -22,7 +28,7 @@ export default function ThuMuaXacNhaXuongPage() {
 
             {/* Tiêu đề trang */}
             <div className="mb-6 pb-2 border-b-2 border-blue-600 inline-block">
-              <h2 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Xác Nhà Xưởng</h2>
+              <h1 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Xác Nhà Xưởng</h1>
             </div>
 
             <div className="prose max-w-none text-[16px] md:text-[20px] leading-relaxed">

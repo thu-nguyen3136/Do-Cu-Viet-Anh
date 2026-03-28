@@ -9,6 +9,12 @@ export default function ThuMuaDoGoCuPage() {
       <Head>
         <title>Thu Mua bàn Ghế Gỗ Cũ Tại Nhà TPHCM - Đồ Cũ Việt Anh</title>
         <meta name="description" content="Cửa hàng dịch vụ thu mua bàn ghê gỗ cũ Việt Anh  của chúng tôi nhận thu mua trọn gói cho tất cả các sản phẩm đồ gỗ cũ đã qua sử dụng." />
+
+        <meta property="og:title" content="Thu Mua bàn Ghế Gỗ Cũ Tại Nhà TPHCM - Đồ Cũ Việt Anh" />
+        <meta property="og:description" content="Cửa hàng dịch vụ thu mua bàn ghê gỗ cũ Việt Anh  của chúng tôi nhận thu mua trọn gói cho tất cả các sản phẩm đồ gỗ cũ đã qua sử dụng." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://thanhlycuacutphcm.com/thu-mua-ban-ghe-go" />
+        <link rel="canonical" href="https://thanhlycuacutphcm.com/thu-mua-ban-ghe-go" />
       </Head>
 
       <main className="max-w-[1200px] mx-auto px-4 py-8">
@@ -21,7 +27,7 @@ export default function ThuMuaDoGoCuPage() {
 
             {/* Tiêu đề trang */}
             <div className="mb-6 pb-2 border-b-2 border-blue-600 inline-block">
-              <h2 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Bàn Ghế Gỗ Cũ Tại Nhà TPHCM</h2>
+              <h1 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Bàn Ghế Gỗ Cũ Tại Nhà TPHCM</h1>
             </div>
 
             <div className="prose max-w-none text-[16px] md:text-[18px] leading-relaxed">

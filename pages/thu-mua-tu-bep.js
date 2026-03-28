@@ -10,6 +10,12 @@ export default function ThuMuaTuBepGoPage() {
       <Head>
         <title>Thu Mua Tủ Bếp Gỗ - Đồ Cũ Việt Anh</title>
         <meta name="description" content="Đồ Cũ Việt Anh là đơn vị chuyên thu mua tủ bếp gỗ cũ các loại giá cao nhất tphcm và các tỉnh lân cận." />
+
+        <meta property="og:title" content="Thu Mua Tủ Bếp Gỗ - Đồ Cũ Việt Anh" />
+        <meta property="og:description" content="Đồ Cũ Việt Anh là đơn vị chuyên thu mua tủ bếp gỗ cũ các loại giá cao nhất tphcm và các tỉnh lân cận." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://thanhlycuacutphcm.com/thu-mua-tu-bep" />
+        <link rel="canonical" href="https://thanhlycuacutphcm.com/thu-mua-tu-bep" />
       </Head>
 
       <main className="max-w-[1200px] mx-auto px-4 py-8">
@@ -22,7 +28,7 @@ export default function ThuMuaTuBepGoPage() {
 
             {/* Tiêu đề trang */}
             <div className="mb-6 pb-2 border-b-2 border-blue-600 inline-block">
-              <h2 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Tủ Bếp Gỗ</h2>
+              <h1 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Tủ Bếp Gỗ</h1>
             </div>
 
             <div className="prose max-w-none text-[16px] md:text-[18px] leading-relaxed">
