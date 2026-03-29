@@ -141,6 +141,9 @@ export default function Header() {
                     <Link href="/thu-mua-do-go">Thu Mua Đồ Gỗ Cũ</Link>
                   </li>
                   <li className="px-5 py-3.5 hover:bg-brand-50 text-gray-700 border-b border-gray-50 text-[13px] font-semibold hover:text-brand-600 hover:pl-8 transition-all duration-300">
+                    <Link href="/thu-mua-van-san-go">Thu Mua Ván Sàn Gỗ</Link>
+                  </li>
+                  <li className="px-5 py-3.5 hover:bg-brand-50 text-gray-700 border-b border-gray-50 text-[13px] font-semibold hover:text-brand-600 hover:pl-8 transition-all duration-300">
                     <Link href="/thu-mua-tu-bep">Thu Mua Tủ Bếp Cũ</Link>
                   </li>
                   <li className="px-5 py-3.5 hover:bg-brand-50 text-gray-700 border-b border-gray-50 text-[13px] font-semibold hover:text-brand-600 hover:pl-8 transition-all duration-300">
@@ -222,6 +225,9 @@ export default function Header() {
                 </li>
                 <li className="pl-4 text-[13px] font-semibold text-brand-100 hover:text-white" onClick={() => setIsOpen(false)}>
                   <Link href="/thu-mua-do-go-cu-tai-nha-tphcm">Thu Mua Đồ Gỗ Cũ</Link>
+                </li>
+                <li className="pl-4 text-[13px] font-semibold text-brand-100 hover:text-white" onClick={() => setIsOpen(false)}>
+                  <Link href="/thu-mua-van-san-go">Thu Mua Ván Sàn Gỗ</Link>
                 </li>
                 <li className="pl-4 text-[13px] font-semibold text-brand-100 hover:text-white" onClick={() => setIsOpen(false)}>
                   <Link href="/thu-mua-tu-bep-go">Thu Mua Tủ Bếp Cũ</Link>
