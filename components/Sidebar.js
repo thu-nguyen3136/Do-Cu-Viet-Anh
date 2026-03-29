@@ -68,6 +68,12 @@ export default function Sidebar() {
             </Link>
           </li>
           <li className="border-b border-gray-100 p-2 hover:bg-gray-50">
+            <Link href="/thu-mua-van-san-go" className="flex items-center gap-3">
+              <img src="thu-mua-van-san-go-cu.png" alt="Thu Mua Ván Sàn Gỗ Cũ" className="w-16 h-12 object-cover" />
+              <h6 className="text-[14px] text-gray-800 m-0 font-medium">Thu Mua Ván Sàn Gỗ</h6>
+            </Link>
+          </li>
+          <li className="border-b border-gray-100 p-2 hover:bg-gray-50">
             <Link href="/thu-mua-thiet-bi-ve-sinh" className="flex items-center gap-3">
               <img src="thu-mua-thiet-bi-ve-sinh-cu.jpg" alt="Mua Thiết Bị Vệ Sinh Cũ" className="w-16 h-12 object-cover" />
               <h6 className="text-[14px] text-gray-800 m-0 font-medium">Mua Thiết Bị Vệ Sinh Cũ</h6>

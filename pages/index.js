@@ -28,10 +28,11 @@ export default function Home() {
       highlightTitle: 'ĐỒ CŨ', // Phần màu vàng #bc700a
       description: 'Nhận thanh lý trọn gói nhà xưởng, thu mua thiết bị vệ sinh, đồ gỗ với giá cao.',
       services: [
-        { id: 1, title: 'Thu Mua Thiết Bị Vệ Sinh Cũ', image: '/thu-mua-thiet-bị-ve-sinh-cu.jpg', link: '/thu-mua-thiet-bi-ve-sinh' },
+        { id: 1, title: 'Thu Mua Thiết Bị Vệ Sinh Cũ', image: '/thu-mua-thiet-bi-ve-sinh-cu.jpg', link: '/thu-mua-thiet-bi-ve-sinh' },
         { id: 2, title: 'Thu Mua Tôn Cũ', image: '/thu-mua-ton-cu.jpg', link: '/thu-mua-ton-cu' },
         { id: 3, title: 'Thu Mua Xác Nhà Kho Xưởng', image: '/thu-mua-xac-nha-kho-xuong.jpg', link: '/thu-mua-xac-nha-xuong' },
         { id: 4, title: 'Thu Mua Đồ Gỗ Cũ', image: '/thu-mua-do-go-cu.jpg', link: '/thu-mua-do-go' },
+        { id: 7, title: 'Thu Mua Ván Sàn Gỗ', image: '/thu-mua-van-san-go-cu.png', link: '/thu-mua-van-san-go' },
         { id: 5, title: 'Thu Mua Tủ Bếp Cũ', image: '/thu-mua-tu-bep-cu.jpg', link: '/thu-mua-tu-bep' },
         { id: 6, title: 'Thu Mua Bàn Ghế Gỗ Cũ', image: '/thu-mua-ban-ghe-go-cu.jpg', link: '/thu-mua-ban-ghe-go' }
       ]
