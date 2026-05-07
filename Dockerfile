@@ -19,13 +19,18 @@ RUN npm run build
 
 # Stage 4: Production runner (Nginx for static export)
 FROM nginx:alpine AS runner
+RUN apk add --no-cache tzdata && \
+    ln -snf /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime && \
+    echo "Asia/Ho_Chi_Minh" > /etc/timezone
+ENV TZ=Asia/Ho_Chi_Minh
 # Remove default nginx static assets
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy static export from builder
 COPY --from=builder /app/out /usr/share/nginx/html
 
-# Copy custom nginx config
+# Copy custom nginx log format and config
+COPY nginx-log-format.conf /etc/nginx/conf.d/00-nginx-log-format.conf
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 3002
